@@ -12,37 +12,32 @@ body{
     max-width: 960px;
     margin: 0 auto;
 }
-.flex-container{
-    display: flex;
-    background-color: white;
-    flex-wrap: wrap;
-}
 
 
 
-.box{
-    
-    height: 100px;
-    flex: 1 0 200px;
-    
-    
+nav{
+    background: #333
 }
-.one{
-    background: red;
-    
-    
-    
-    
+nav ul{
+    list-style-type: none;
+    padding: 0;
 }
-.two{
-    background: blue;
-   
-    
-    
+nav a {
+    text-decoration: none;
+    //text-align:center;
+    color: #ffffff;
+    display: block;
+    padding: 10px;
 }
-.three{
-    background: green;
-    
-   
-    
+nav a:hover{
+    background-color: #555;
+}
+@media screen and (min-width: 768px){
+    nav ul{
+        display: flex;
+        justify-content: center
+    }
+    nav li{
+        //flex: 1 1 0;
+    }
 }

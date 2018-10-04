@@ -12,27 +12,32 @@ body{
     max-width: 1200px;
     margin: 0 auto;
 }
-
-
-.flex-container{
-    display: flex;
-    background: #fff;
-    flex-wrap: wrap;
-    flex-flow: row;
-    align-items: flex-end;
-    height: 600px; 
-    justify-content: center;
+#blocks{
+    margin: 20px;
 }
-.box{
-    height: 100px;
-    flex: 0 0 100px;
+article{
+    background: #ffff;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
 }
-.one{
-    background: red;
+article{
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0;
 }
-.two{
-    background: blue;
-}
-.three{
-    background: green;
+@media screen and (min-width: 768px){
+    #blocks{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    article{
+        flex: 0 1 32%;
+        transition: flex-basis 0.2s linear;
+    }
+    article.stack{
+        flex: 0 1 100%;
+    }
 }

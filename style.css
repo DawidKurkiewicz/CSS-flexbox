@@ -31,13 +31,53 @@ nav a {
 }
 nav a:hover{
     background-color: #555;
+
+
+
 }
+
+
+a.tw{
+    background: url(../Flexbox/example-2/img/tw.png) no-repeat center;
+    background-size: 80%;
+}
+
+a.fb{
+    background: url(../Flexbox/example-2/img/fb.png) no-repeat center;
+    background-size: 80%;
+}
+
+.social a{
+    text-indent: - 100000px;
+}
+.social{
+    max-width: 80px;
+    margin: 0 auto;
+}
+nav ul.social{
+    flex: 1 1 0;
+    display: flex;
+}
+nav ul.social li{
+    flex 1 1 0;
+}
+
+
+
 @media screen and (min-width: 768px){
     nav ul{
         display: flex;
-        justify-content: center
+        
     }
     nav li{
-        //flex: 1 1 0;
+        flex: 1 1 0;
     }
+}
+    nav{
+        display: flex;
+        justify-content: space-between;
+
+}
+.social {
+    margin 0;
 }

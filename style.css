@@ -15,15 +15,15 @@ body{
 .flex-container{
     display: flex;
     background-color: white;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
 }
 
 
 
 .box{
+    
     height: 100px;
-    min-width: 200px;
-    flex-grow: 1;
+    flex: 1 0 200px;
     
     
 }
@@ -32,14 +32,17 @@ body{
     
     
     
+    
 }
 .two{
     background: blue;
+   
     
     
 }
 .three{
     background: green;
+    
    
     
 }
